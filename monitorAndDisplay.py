@@ -23,8 +23,7 @@ print("Temperature: %s C" % temp)
 
 
 def displaytemp():
-    t = temp
-    int(round(t))
+    t = int(round(temp))
     print (t)
 
 
