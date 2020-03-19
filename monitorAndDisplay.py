@@ -11,9 +11,9 @@ with open('config.json', 'r') as myfile:
 obj = json.loads(data)
 
 #JSON test print
-print("cold_max: " + str(obj['cold_max']))
-print("comfortable_min: " + str(obj['comfortable_min']))
-print("comfortable_max: " + str(obj['comfortable_max']))
+#print("cold_max: " + str(obj['cold_max']))
+#print("comfortable_min: " + str(obj['comfortable_min']))
+#print("comfortable_max: " + str(obj['comfortable_max']))
 
 
 #
@@ -24,6 +24,7 @@ print("Temperature: %s C" % temp)
 
 def displaytemp():
     t = temp
+    int(round(t))
     print (t)
 
 
