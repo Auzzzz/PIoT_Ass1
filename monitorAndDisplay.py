@@ -21,9 +21,13 @@ sense = SenseHat()
 temp = sense.get_temperature()
 print("Temperature: %s C" % temp)
 
-#sense.clear(255,255,0)
+
+def displaytemp():
+    t = temp
+    print (t)
+
+
+    # sense.clear(255,255,0)
 
 #Text display not needed =(
 #sense.show_message("Temp = %s C " % temp)
-
-
