@@ -27,7 +27,8 @@ def displaytemp():
     print (t)
 
 
-    # sense.clear(255,255,0)
+displaytemp()
+# sense.clear(255,255,0)
 
 #Text display not needed =(
 #sense.show_message("Temp = %s C " % temp)
