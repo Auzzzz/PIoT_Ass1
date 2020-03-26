@@ -1,6 +1,7 @@
 
 import json
 import time
+import random
 from sense_hat import SenseHat
 
 # https://pythonbasics.org/read-json-file/
@@ -32,8 +33,8 @@ red = (255,0,0)
 green = (0,255,0)
 clear = (0,10,0)
 #temp = sense.get_temperature()
-
-temp = 9
+temp = random.randint(5,25))
+#temp = 9
 #print("Temperature: %s C" % temp)
 
 def displaytemp():
@@ -57,6 +58,7 @@ def displaytemp():
 count = 0
 while True:
     displaytemp()
+    print(temp)
     time.sleep(3)
     count +1
     
