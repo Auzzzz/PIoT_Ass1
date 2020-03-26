@@ -14,9 +14,9 @@ with open('config.json', 'r') as myfile:
 obj = json.loads(data)
 
 # JSON test print
-print("cold_max: " + str(obj['cold_max']))
-print("comfortable_min: " + str(obj['comfortable_min']))
-print("comfortable_max: " + str(obj['comfortable_max']))
+#print("cold_max: " + str(obj['cold_max']))
+#print("comfortable_min: " + str(obj['comfortable_min']))
+#print("comfortable_max: " + str(obj['comfortable_max']))
 
 #declare temps
 cold = (int(obj['cold_max']))
@@ -29,25 +29,28 @@ sense = SenseHat()
 blue = (0,0,255)
 yellow = (255,255,0)
 red = (255,0,0)
+green = (0,255,0)
 clear = (0,10,0)
-temp = sense.get_temperature()
+#temp = sense.get_temperature()
 
-#temp = 20
+temp = 9
 #print("Temperature: %s C" % temp)
 
 def displaytemp():
     t = int(round(temp))
     if t < 10:
-        print("its cold")
+        #print("its cold")
         sense.clear(blue)
     elif t in range(cmin,cmax):
-        print("Compfhy ")
+        #print("Compfhy ")
         sense.clear(yellow)
     elif t >= 23:
-        print("HOT")
+        #print("HOT")
         sense.clear(red)
     else:
-        print("error")
+        #print("error")
+        sense.clear(green)
+
 
 
 displaytemp()
