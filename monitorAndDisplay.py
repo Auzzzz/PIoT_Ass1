@@ -54,10 +54,10 @@ def displaytemp():
 count = 0
 while True:
     displaytemp()
-    print(temp)
-    time.sleep(3)
+    time.sleep(10)
     count +1
-    #demo numbers
+    #demo
+    print(temp)
     #temp = random.randint(5,25)
         
 
