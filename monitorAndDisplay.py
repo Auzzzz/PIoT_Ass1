@@ -33,7 +33,7 @@ red = (255,0,0)
 green = (0,255,0)
 clear = (0,10,0)
 #temp = sense.get_temperature()
-temp = random.randint(5,25))
+temp = random.randint(5,25)
 #temp = 9
 #print("Temperature: %s C" % temp)
 
@@ -61,6 +61,7 @@ while True:
     print(temp)
     time.sleep(3)
     count +1
+    sense.clear(clear)
     
 
 
