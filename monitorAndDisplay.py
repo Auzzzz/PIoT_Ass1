@@ -24,16 +24,13 @@ print("Temperature: %s C" % temp)
 t = int(round(temp))
 
 def displaytemp():
-    
-
-
-if t < str(obj['cold_max']):
-    print("its cold")
-elif t in range(str(obj['comfortable_min']), str(obj['comfortable_max'])):
-    print("Compfhy ")
-elif t >= 23:
-    print("HOT")
-else:
+    if t < str(obj['cold_max']):
+   	 print("its cold")
+         else if t in range(str(obj['comfortable_min']), str(obj['comfortable_max'])):
+             print("Compfhy ")
+         else if t >= 23:
+             print("HOT")
+    else:
     print("error")
 
     displaytemp()
