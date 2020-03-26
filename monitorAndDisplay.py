@@ -1,4 +1,3 @@
-
 import json
 import time
 from sense_hat import SenseHat
@@ -18,22 +17,23 @@ obj = json.loads(data)
 
 #
 sense = SenseHat()
-temp = sense.get_temperature()
+#temp = sense.get_temperature()
+temp = 20
 print("Temperature: %s C" % temp)
 
-t = int(round(temp))
-
 def displaytemp():
-    if t < str(obj['cold_max']):
-   	 print("its cold")
-         else if t in range(str(obj['comfortable_min']), str(obj['comfortable_max'])):
-             print("Compfhy ")
-         else if t >= 23:
-             print("HOT")
+    t = int(round(temp))
+    if t < 10:
+        print("its cold")
+    elif t in range(10,23):
+        print("Compfhy ")
+    elif t >= 23:
+        print("HOT")
     else:
-    print("error")
+        print("error")
 
-    displaytemp()
+
+displaytemp()
 
 
 # sense.clear(255,255,0)
