@@ -30,8 +30,8 @@ blue = (0,0,255)
 yellow = (255,255,0)
 red = (255,0,0)
 clear = (0,10,0)
+temp = sense.get_temperature()
 
-#temp = sense.get_temperature()
 #temp = 20
 #print("Temperature: %s C" % temp)
 
