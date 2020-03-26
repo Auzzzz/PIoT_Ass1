@@ -53,7 +53,13 @@ def displaytemp():
 
 
 
-displaytemp()
+
+count = 0
+while True:
+    displaytemp()
+    time.sleep(3)
+    count +1
+    
 
 
 # sense.clear(255,255,0)
