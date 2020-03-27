@@ -21,7 +21,7 @@ def dice():
 
 while True:
 	dice()
-	sense.show_letter(str(number))
+	sense.show_message(str(number))
 	sense.clear()
 	time.sleep(2)
 	count +1
