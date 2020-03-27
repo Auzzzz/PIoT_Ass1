@@ -16,11 +16,13 @@ def dice():
 
 	if x > 2 or y > 2 or z > 2:
 		number = random.randint(1,6)
+
 		print(number)
 
 while True:
 	dice()
-	time.sleep(0.5)
+	sense.show_message(number)
+	time.sleep(3)
 	count +1
 
 	#x=round(x, 0)
