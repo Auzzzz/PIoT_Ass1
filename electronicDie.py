@@ -6,7 +6,7 @@ import random
 
 sense = SenseHat()
 count = 0
-number = None
+
 def dice():
 	x, y, z = sense.get_accelerometer_raw().values()
 
