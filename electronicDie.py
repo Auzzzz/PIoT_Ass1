@@ -6,7 +6,7 @@ import random
 
 sense = SenseHat()
 count = 0
-number = 0
+number = None
 def dice():
 	x, y, z = sense.get_accelerometer_raw().values()
 
@@ -22,7 +22,8 @@ def dice():
 while True:
 	dice()
 	sense.show_letter(str(number))
-	time.sleep(3)
+	sense.clear()
+	time.sleep(2)
 	count +1
 
 	#x=round(x, 0)
