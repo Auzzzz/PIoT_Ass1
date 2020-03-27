@@ -15,7 +15,7 @@ def dice():
 	z = abs(z)
 
 	if x > 2 or y > 2 or z > 2:
-		number = random(1,6)
+		number = random.randint(1,6)
 		print(number)
 
 while True:
